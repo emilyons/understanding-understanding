@@ -6,6 +6,9 @@ const NetworkGraph = () => {
   const svgRef = useRef();
 
   useEffect(() => {
+    const svg = d3.select(svgRef.current);
+
+    svg.selectAll("*").remove();
     const data = {
       nodes: [
         { id: "Understanding Code", group: 0 },
@@ -286,16 +289,24 @@ const NetworkGraph = () => {
       ],
     };
 
-    const svg = d3
-      .select(svgRef.current)
+    svg
       .attr("width", 800)
       .attr("height", 800)
       .style("border", "1px solid black");
 
-    const color = d3.scaleOrdinal()
-    .domain([0, 1, 2, 3, 4, 5, 6])
-    .range(["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2"]);
-  
+    const color = d3
+      .scaleOrdinal()
+      .domain([0, 1, 2, 3, 4, 5, 6])
+      .range([
+        "#1f77b4",
+        "#ff7f0e",
+        "#2ca02c",
+        "#d62728",
+        "#9467bd",
+        "#8c564b",
+        "#e377c2",
+      ]);
+
     const simulation = d3
       .forceSimulation(data.nodes)
       .force(
