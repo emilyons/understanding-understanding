@@ -1,70 +1,142 @@
-# Getting Started with Create React App
+# Model for Understanding Understanding
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Why am I Creating this Model?
 
-## Available Scripts
+- As I've been studying software engineering, I notice that sometimes I understand the content well, and other times I don't feel as comfortable with new information. 
+- Building projects, sometimes I spend hours debugging, because I have not understood something relatively simple about how the code I'm trying to use works, or how to use it optimally.
+- Doing is probably the best way to learn something, because it tests what we know and don't know, and forces us to focus on and learn the areas that we do not know.
+- I developed a hypothesis: 
 
-In the project directory, you can run:
+If I can determine what information my brain wants to know about each thing I am learning, then as I am ingesting new information or trying to understand or use something, it will be easier to discover what I don't know. Then, I can target thoes aspects of the new material, to more efficiently plan and write code, resolving bugs when they do come up, and proactively avoiding them more often.
 
-### `npm start`
+- This led to the question: 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**What do I need to know to help me truly understand something?** 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I began thinking of a list of questions that I want to know about each bit of code that I see in my lessons or try to use, myself:
 
-### `npm test`
+1. What _is_ it?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+_For example, if I'm looking at an array "it" may be a set of square brackets: []._
 
-### `npm run build`
+-  How could we say it out loud, in English? Or, how to represent its meaning in spoken English?
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+_For example, for the square brackets above, maybe I would read "square bracket container that will hold the array" or something._ 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+I initially was not sure how to address the fact that "[]" could be read as square brackets, which _is_ an important part of the concept of arrays, but is more directly already addressed in the first question. This question is meant to explain what is happening, like "container that will hold the array".
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Why is it here?
 
-### `npm run eject`
+3. What does it do?
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Those questions kind of combined into another: 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. What does it represent?
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Part of what the element represents is how it would be described out loud, and part of it is about what it does.  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Extrapolated, that led to:
 
-## Learn More
+5. How does it work?
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+and 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+6. What problem is it solving?
 
-### Code Splitting
+Thinking about #3 What does it do, I wondered:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+7. How are the things around it dependent on it or not? 
 
-### Analyzing the Bundle Size
+which led to
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+8. What would happen if we left it out?
 
-### Making a Progressive Web App
+and 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+9. What errors would suggest a problem with this, or are related to this?
 
-### Advanced Configuration
+This seemed to be an extension of my original question "What is this?" because when we're looking at errors or what happens when we leave it out, then in a sense, we're asking _"What is it not?"_ which is really another way to define what something is.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Related: This concept is apparent if you've ever tried to guess what a young child is trying to tell you about. Process of elimination does help narrow things down effectively.
 
-### Deployment
+Back to my original line of thought, I added,
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+10. Does it need to go anywhere else?
 
-### `npm run build` fails to minify
+Which led me to wonder, 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Or will it? Or could it?
+
+Because when we're initially learning about something, we may not know that two pages later it is going to show up again in a way that will make more sense if we'd understood that it was coming.
+
+And then, 
+
+11. Why or why not?
+
+12. Will it look the same or different somehow? 
+
+Back to wondering about why it is here, 
+
+13. Are there other ways to do the same thing? If so, why did we use _this_ method?
+
+14. Is the way we're using it standard, common, uncommon, or discouraged?
+
+And then, thinking about that and whether things will look the same or different in different places, I wondered:
+
+15. How does this interact with related codes and services?
+
+_Ex: classes appear in HTML, CSS, SCSS, JS, and JSX, but they appear a little differently._
+
+and finally, 
+
+16. Is there a relatable non-dev analogy?
+
+Sometimes that is useful to help me understand, but it could also be useful later when I am working with non-technical folks who need to understand something technical. 
+
+## Sorting the Questions
+
+It was quickly apparent that a lot of these questions had minor aspects in common one with another.
+
+If I was going to make some kind of form or worksheet to refer to as I was learning about things, it would make sense to understand how these questions relate to one another so that information did not need to be duplicated, and details could be linked together in a way that would make the most sense intuitively.
+
+Noticing that my questions had a lot of the common typical questions, I saw that the questions or their parts could be sorted into the usual "who", "what", "where", "when", "why", and "how".
+
+I color coded my list of questions, to see what patterns and overlaps I could find. 
+
+I immediately saw that location (where) and location in time (when) have a fair amount of overlap. "Where" seems to be one aspect of "When", but the difference may be negligible and based only on my own personal usage of those terms. For instance, I classified "does it need to go anywhere else?" as entirely related to "when", but the "does it need to" part was not exactly related to "where"--the necessity aspect is more closely linked with maybe "how" or "where", or the "what" it is doing.
+
+Other overlaps arise with "why" and "how", which makes sense, because a reason for doing something can imply a specific method for doing it. 
+
+Questions related to "Who" and "What" overlap a fair amount, but the identity piece (who) is concerned with what it is not, and that is the opposite of "what".
+
+## Accessing and Understanding Patterns
+
+At first I wondered if I could somehow create a Venn Diagram with all 6 Questions as circles, so that I could visualize the overlaps between the different information. This seemed like it would be unwieldly.
+
+I thought I could print out strips of paper where each question was printed in each of the colors that applied. Then I could have circles that were colored and labeled to represent the different questions as colors, and I could attach the papers with the strips that they had in common. 
+
+Upon printing strips, I realized that trying to attach them all would likely be very bulky and make things more confusing rather than less.
+
+I decided to create the circles as a flat poster, and then I could connect the colored circles with strings for what they have in common. I started doing this, and ended up affixing the questions in their cirlcles as applicable.
+
+I wondered if a computer could model this more easily than I could, because it seemed like a lot of work and strings and connections to be able to draw inferences. 
+
+## Physical to Digital using GPT
+
+I showed ChatGPT my poster and asked it if there was a way to build a model of these connections using React. ChatGPT recommended using the d3 library and suggested some code that could create the visualization.
+
+I set this up and found that the model was a very interesting visualization, but wrong. The questions were not sorted, nor connected properly. 
+
+## Improving the Digital Model
+
+I added the different nodes and their links, to correspond with my existing physical diagrams. 
+
+Now, I have a functional model that has been really interesting to me. 
+
+## Next Steps
+
+I plan to fix the colors; currently they do not match the legend. 
+
+I may also add the ability to add more questions or links, or new ways to display the data. 
+
+If anyone else has ideas for how to better visualize this information, or better conceptualize how we understand things, please send me a message!
